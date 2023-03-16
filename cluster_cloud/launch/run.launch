@@ -1,0 +1,40 @@
+<launch>
+    <!-- quyu out_1 -->
+    <!-- <param name="static_ser_num" value="300" />
+    <param name="static_thr" value="2.8" />
+    <param name="distance_" value="6" />
+
+    <param name="KSearch" value="200" />
+    <param name="MinClusterSize" value="100" />
+    <param name="MaxClusterSize" value="1000000" />
+    <param name="NumberOfNeighbours" value="200" />
+    <param name="SmoothnessThreshold" value="120.0" />
+    <param name="CurvatureThreshold" value="120" /> -->
+
+
+    <!-- <param name="clus_radiu" value="0.2" />
+    <param name="clus_min_num" value="500" />
+    <param name="clus_max_num" value="25000" /> -->
+
+    <!-- quyu out_2 -->
+
+    <param name="static_ser_num" value="600" />
+    <param name="static_thr" value="1.6" />
+    <param name="distance_" value="4" />
+
+    <param name="KSearch" value="55" />
+    <param name="MinClusterSize" value="500" />
+    <param name="MaxClusterSize" value="1000000" />
+    <param name="NumberOfNeighbours" value="170" />
+    <param name="SmoothnessThreshold" value="60.0" />
+    <param name="CurvatureThreshold" value="120" />
+
+    <node name="cluster_cloud" pkg="cluster_cloud" type="cluster_cloud" output="screen"/>
+
+    <param name="N_SCAN" value="32" />
+    <param name="Horizon_SCAN" value="2169" />
+    <param name="vertAngleRes" value="1.333" />
+    <param name="horizonAngleRes" value="0.166" />
+    <param name="ang_bottom" value="30.67" />
+
+</launch>

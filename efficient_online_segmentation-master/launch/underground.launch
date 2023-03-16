@@ -1,0 +1,14 @@
+<launch>
+
+    <param name="/use_sim_time" value="true" />
+
+    <!-- ROS Node -->
+    <node name="efficient_online_segmentation" pkg="efficient_online_segmentation" type="efficient_online_segmentation_node" output="screen">
+        <rosparam command="load" file="$(find efficient_online_segmentation)/launch/segmentation_params_underground.yaml"/>
+    </node>
+
+    <include file="$(find cluster_cloud)/launch/run_underground.launch"/>
+
+    <!-- ROS Rviz -->
+    <node name="rviz_EOS" pkg="rviz" type="rviz" required="true" args="-d $(find efficient_online_segmentation)/launch/efficient_online_segmentation.rviz" />
+</launch>

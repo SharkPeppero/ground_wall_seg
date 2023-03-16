@@ -1,0 +1,22 @@
+<launch>
+    <!-- quyu 1_bag-->
+    <param name="static_ser_num" value="500" />
+    <param name="static_thr" value="5" />
+    <param name="distance_" value="4" />
+
+    <param name="KSearch" value="20" />
+    <param name="MinClusterSize" value="50" />
+    <param name="MaxClusterSize" value="1000000" />
+    <param name="NumberOfNeighbours" value="100" />
+    <param name="SmoothnessThreshold" value="60.0" />
+    <param name="CurvatureThreshold" value="120" />
+
+    <node name="cluster_cloud" pkg="cluster_cloud" type="cluster_cloud" output="screen"/>
+
+    <param name="N_SCAN" value="16" />
+    <param name="Horizon_SCAN" value="1800" />
+    <param name="vertAngleRes" value="2.0" />
+    <param name="horizonAngleRes" value="0.2" />
+    <param name="ang_bottom" value="15.00" />
+
+</launch>
